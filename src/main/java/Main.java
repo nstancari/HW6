@@ -16,7 +16,7 @@ public class Main extends Application {
 	            Parent root = FXMLLoader.load(getClass()
 	                    .getResource("/FXML/Myfxml.fxml"));
 	 
-	            primaryStage.setTitle("My Application");
+	            primaryStage.setTitle("Nicholas Stancari Homework 3");
              Scene s1 = new Scene(root, 500,500);
              s1.getStylesheets().add("/styles/style1.css");
 	            primaryStage.setScene(s1);
