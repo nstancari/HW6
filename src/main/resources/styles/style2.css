@@ -1,9 +1,9 @@
 .button {
-	-fx-font-size: 24px;
+	-fx-font-size: 10px;
 	-fx-font-weight: bold;
-	-fx-background-color: pink;
+	-fx-background-color: yellow;
 }
 
 .border {
-	-fx-background-color: orange;
+	-fx-background-color: green;
 }
