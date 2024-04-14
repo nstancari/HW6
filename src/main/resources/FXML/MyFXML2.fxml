@@ -5,19 +5,17 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1" styleClass="vbox" fx:controller="MyController" fx:id="root">
-	<BorderPane styleClass="border">
-		<left>
-			<VBox>
-				<Button fx:id="helloButton" text="button 1" onAction="#helloMethod" />
-				<Button fx:id="b1" text="button 2" onAction="#b1Method" />
-			</VBox>
-		</left>
-		<center>
-			<TextField fx:id="textField" promptText="enter text here then press button 1" />
-		</center>
-		<right>
-			<TextField fx:id="putText" editable="false" text="final string goes here" />
-		</right>
-	</BorderPane>
-</VBox>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" styleClass="border" fx:controller="MyController" fx:id="root2">
+	<left>
+		<VBox styleClass="vbox">
+			<Button fx:id="helloButton" text="pressed" onAction="#helloMethod" disable="true" />
+			<Button fx:id="b1" text="button 2" onAction="#b1Method" />
+		</VBox>
+	</left>
+	<center>
+		<TextField fx:id="textField" promptText="enter text here then press button 1" />
+	</center>
+	<right>
+		<TextField fx:id="putText" editable="false" text="final string goes here" />
+	</right>
+</BorderPane>

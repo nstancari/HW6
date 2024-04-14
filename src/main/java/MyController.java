@@ -49,7 +49,7 @@ public class MyController implements Initializable {
 
     public void setText2(){
         textField.setText(textEntered);
-        System.out.println("hello from setText");
+        System.out.println("hello from setText2");
     }
 
 	public void helloMethod(ActionEvent e) throws IOException {
@@ -62,13 +62,11 @@ public class MyController implements Initializable {
         Parent root2 = loader.load(); //load view into parent
         MyController myctr = loader.getController();//get controller created by FXMLLoader
         myctr.setText();//use MyLoader class method for setText()
+        helloButton.setDisable(true); // Disable 'button 1'
 
         root2.getStylesheets().add("/styles/style2.css");//set style
 
         root.getScene().setRoot(root2);//update scene graph
-
-        helloButton.setDisable(true); // Disable 'button 1'
-        helloButton.setText("pressed");  // Change the button's label
 
 
        	/* original way to load views...nothing shared across FXML filesa
@@ -85,6 +83,7 @@ public class MyController implements Initializable {
 
 	public void b1Method(ActionEvent e) throws IOException{
 
+
         textEntered = putText.getText();
         System.out.println(textEntered);
 
@@ -93,6 +92,7 @@ public class MyController implements Initializable {
         MyController myctr = loader.getController();
         myctr.setText2();
         root2.getScene().setRoot(root);
+
 
         /*
 		Parent root = FXMLLoader.load(getClass()
